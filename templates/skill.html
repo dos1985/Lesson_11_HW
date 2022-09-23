@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>Найдено со скилом {{ skill_name }} {{ number_of_candidate }}</h1>
+
+{% for candidate in candidates %}
+    <p><a href="/candidate/{{ candidate.id }}">{{ candidate.name }}</p>
+{% endfor %}
+
+</body>
+</html>
